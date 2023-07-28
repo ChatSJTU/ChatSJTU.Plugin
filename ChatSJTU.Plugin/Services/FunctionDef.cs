@@ -14,6 +14,8 @@ namespace ChatSJTU.Plugin.Services
             sb.Append(CanteenController.GetDef());
             sb.Append(",");
             sb.Append(DektController.GetDef());
+            sb.Append(",");
+            sb.Append(LibraryController.GetDef());
             sb.Append("]");
             return sb.ToString();
         }
