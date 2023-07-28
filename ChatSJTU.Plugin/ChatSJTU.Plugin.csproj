@@ -7,10 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Resources\TokenA.json" />
+    <Content Remove="Resources\TokenB.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Quartz.Jobs" Version="3.6.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Teru.Code" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="TokenA.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TokenB.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
