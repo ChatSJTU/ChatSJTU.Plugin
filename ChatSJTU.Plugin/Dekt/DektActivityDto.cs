@@ -203,7 +203,7 @@ namespace ChatSJTU.Plugin.Dekt
     public partial class ActivityContentInfoDto
     {
         [JsonProperty("drag")]
-        public string Drag { get; set; }
+        public ActivityContentInfoTemplateDto Drag { get; set; }
 
         [JsonProperty("template")]
         public ActivityContentInfoTemplateDto Template { get; set; }

@@ -28,5 +28,11 @@
             DateTime t = new DateTime(1970, 1, 1, 0, 0, 0, 0) + TimeSpan.FromMilliseconds(time);
             return t.ToString("F");
         }
+
+        public static string ToFriendlyTime(this int time)
+        {
+            DateTime t = new DateTime(1970, 1, 1, 0, 0, 0, 0) + TimeSpan.FromSeconds(time);
+            return t.ToString("F");
+        }
     }
 }
