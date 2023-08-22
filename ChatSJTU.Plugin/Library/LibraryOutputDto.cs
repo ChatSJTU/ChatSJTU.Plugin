@@ -9,7 +9,7 @@ namespace ChatSJTU.Plugin.Library
             this.LibName = item.AreaName;
             this.InCounter = item.InCounter;
             this.Capacity = item.Max;
-            this.rate = this.InCounter / this.Capacity;
+            this.rate = (double)this.InCounter / this.Capacity;
             this.State = this.InCounter == 0 ? "闭馆中" : "正常开放";
         }
 

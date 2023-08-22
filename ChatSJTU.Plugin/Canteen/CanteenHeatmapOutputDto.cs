@@ -21,7 +21,7 @@ namespace ChatSJTU.Plugin.Canteen
             this.SeatS = dto.SeatS;
             this.SeatU = dto.SeatU;
             this.Name = dto.Name;
-            this.rate = (dto.SeatS == 0) ? 0 : (dto.SeatU / dto.SeatS);
+            this.rate = (dto.SeatS == 0) ? 0d : ((double)dto.SeatU / dto.SeatS);
         }
     }
 }
