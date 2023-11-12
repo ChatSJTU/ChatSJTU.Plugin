@@ -4,6 +4,7 @@ using Quartz;
 using static Quartz.Logging.OperationName;
 using ChatSJTU.Plugin.Services.Jaccount;
 using ChatSJTU.Plugin.Services;
+using ChatSJTU.Plugin.Log;
 
 namespace ChatSJTU.Plugin
 {
@@ -41,6 +42,7 @@ namespace ChatSJTU.Plugin
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddSingleton(typeof(RequestResponseLoggingMiddleware));
             builder.WebHost.UseUrls("http://*:65472");
 
             var app = builder.Build();
@@ -55,6 +57,7 @@ namespace ChatSJTU.Plugin
 
             app.UseAuthorization();
 
+            app.UseRequestResponseLogging();
 
             app.MapControllers();
 

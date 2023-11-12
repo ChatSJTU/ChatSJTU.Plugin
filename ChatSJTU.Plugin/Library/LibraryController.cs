@@ -14,9 +14,9 @@ namespace ChatSJTU.Plugin.Weather
     public class LibraryController : ControllerBase, IFunctionCalling
     {
 
-        private readonly ILogger<LibraryController> _logger;
+        private readonly ILogger<Program> _logger;
 
-        public LibraryController(ILogger<LibraryController> logger)
+        public LibraryController(ILogger<Program> logger)
         {
             _logger = logger;
         }
