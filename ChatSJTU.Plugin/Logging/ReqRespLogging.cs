@@ -22,7 +22,7 @@ namespace ChatSJTU.Plugin.Log
             var respStatus = context.Response.StatusCode;
 
             _logger.LogInformation($"[{excuteStartTime.ToString("g")}][{respStatus}] {method} {url}");
-            return Task.CompletedTask;
+            return next.Invoke(context);
         }
     }
 

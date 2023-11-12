@@ -75,7 +75,7 @@ namespace ChatSJTU.Plugin.Hpc
                 """;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("overview")]
         public FcDto GetOverview()
         {
