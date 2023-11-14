@@ -31,7 +31,7 @@ namespace ChatSJTU.Plugin.Services
                             "id": "campus",
                             "name": "SJTU 校园生活",
                             "description": "为模型提供获取 SJTU 校园生活数据的能力，如天气、食堂热力图、图书馆上座率等",
-                            "icon": "data:image/svg+xml;base64,{{Convert.ToBase64String(EmbedResHelper.Get生活())}}",
+                            "icon": "data:image/svg+xml;base64,{{Convert.ToBase64String(EmbedResHelper.Get交大生活())}}",
                             "functions": [
                                 {{WeatherController.GetDef()}},
                                 {{CanteenController.GetDef()}},

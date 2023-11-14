@@ -11,8 +11,8 @@ namespace ChatSJTU.Plugin.Helpers
         [EmbedResourceCSharp.FileEmbed("Resources/交我算.svg")]
         public static partial ReadOnlySpan<byte> Get交我算();
 
-        [EmbedResourceCSharp.FileEmbed("Resources/生活.svg")]
-        public static partial ReadOnlySpan<byte> Get生活();
+        [EmbedResourceCSharp.FileEmbed("Resources/交大生活.svg")]
+        public static partial ReadOnlySpan<byte> Get交大生活();
 
         [EmbedResourceCSharp.FileEmbed("Resources/校园管理.svg")]
         public static partial ReadOnlySpan<byte> Get校园管理();

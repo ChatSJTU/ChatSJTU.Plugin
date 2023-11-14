@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\交大生活.svg" />
     <None Remove="Resources\交我算.svg" />
     <None Remove="Resources\校园管理.svg" />
     <None Remove="Resources\生活.svg" />
@@ -34,9 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\交大生活.svg" />
     <Resource Include="Resources\交我算.svg" />
     <Resource Include="Resources\校园管理.svg" />
-    <Resource Include="Resources\生活.svg" />
   </ItemGroup>
 
 </Project>
