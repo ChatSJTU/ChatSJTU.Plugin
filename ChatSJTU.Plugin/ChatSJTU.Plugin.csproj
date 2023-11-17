@@ -9,8 +9,14 @@
   <ItemGroup>
     <None Remove="Resources\交大生活.svg" />
     <None Remove="Resources\交我算.svg" />
+    <None Remove="Resources\图书馆.svg" />
+    <None Remove="Resources\场馆预约.svg" />
+    <None Remove="Resources\教务.svg" />
+    <None Remove="Resources\教学楼.svg" />
+    <None Remove="Resources\日程.svg" />
     <None Remove="Resources\校园管理.svg" />
     <None Remove="Resources\生活.svg" />
+    <None Remove="Resources\财务.svg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,7 +43,13 @@
   <ItemGroup>
     <Resource Include="Resources\交大生活.svg" />
     <Resource Include="Resources\交我算.svg" />
+    <Resource Include="Resources\图书馆.svg" />
+    <Resource Include="Resources\场馆预约.svg" />
+    <Resource Include="Resources\教务.svg" />
+    <Resource Include="Resources\教学楼.svg" />
+    <Resource Include="Resources\日程.svg" />
     <Resource Include="Resources\校园管理.svg" />
+    <Resource Include="Resources\财务.svg" />
   </ItemGroup>
 
 </Project>
