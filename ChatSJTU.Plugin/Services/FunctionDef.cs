@@ -28,6 +28,15 @@ namespace ChatSJTU.Plugin.Services
                     "message": "success",
                     "data": [
                         {
+                            "id": "web",
+                            "name": "搜索引擎",
+                            "description": "为模型提供获取搜索互联网以获取最新信息的能力\n",
+                            "icon": "data:image/svg+xml;base64,{{Convert.ToBase64String(EmbedResHelper.GetGlobe())}}",
+                            "functions": [
+                                {{WebSearchController.GetDef()}}
+                            ]
+                        },
+                        {
                             "id": "campus",
                             "name": "SJTU 校园生活",
                             "description": "为模型提供获取 SJTU 校园生活数据的能力，如天气、食堂热力图、图书馆上座率等",
@@ -51,19 +60,10 @@ namespace ChatSJTU.Plugin.Services
                         {
                             "id": "hpc",
                             "name": "SJTU 超算平台",
-                            "description": "为模型提供获取超算平台使用帮助、实时利用率的能力",
+                            "description": "为模型提供获取超算平台使用帮助、实时利用率的能力\n",
                             "icon": "data:image/svg+xml;base64,{{Convert.ToBase64String(EmbedResHelper.Get交我算())}}",
                             "functions": [
                                 {{HpcOverviewController.GetDef()}}
-                            ]
-                        },
-                        {
-                            "id": "web",
-                            "name": "搜索引擎",
-                            "description": "为模型提供获取搜索互联网以获取最新信息的能力",
-                            "icon": "data:image/svg+xml;base64,{{Convert.ToBase64String(EmbedResHelper.GetGlobe())}}",
-                            "functions": [
-                                {{WebSearchController.GetDef()}}
                             ]
                         }
                     ]

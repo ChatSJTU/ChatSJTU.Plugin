@@ -46,7 +46,7 @@ namespace ChatSJTU.Plugin.Weather
         public FcDto Post([FromBody] WebSearchInputDto argv)
         {
             Debug.WriteLine(argv.keywords);
-
+            _logger.LogInformation(argv.keywords);
             try
             {
                 HttpClient client = new HttpClient(new HttpClientHandler() { Proxy = new WebProxy("http://127.0.0.1:17890") }) { Timeout = new TimeSpan(0, 0, 10) };
@@ -58,7 +58,9 @@ namespace ChatSJTU.Plugin.Weather
                     throw new Exception();
                 return new FcDto(0, "", JsonConvert.SerializeObject(res));
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.ToString());
                 return new FcDto(400, "ËÑË÷Ê±·¢Éú´íÎó¡£", null);
             }
         }
