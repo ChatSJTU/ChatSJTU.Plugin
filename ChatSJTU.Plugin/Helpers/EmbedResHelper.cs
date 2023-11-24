@@ -16,5 +16,8 @@ namespace ChatSJTU.Plugin.Helpers
 
         [EmbedResourceCSharp.FileEmbed("Resources/校园管理.svg")]
         public static partial ReadOnlySpan<byte> Get校园管理();
+
+        [EmbedResourceCSharp.FileEmbed("Resources/globe.svg")]
+        public static partial ReadOnlySpan<byte> GetGlobe();
     }
 }

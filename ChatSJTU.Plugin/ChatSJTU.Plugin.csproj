@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\globe.svg" />
     <None Remove="Resources\交大生活.svg" />
     <None Remove="Resources\交我算.svg" />
     <None Remove="Resources\校园管理.svg" />
@@ -14,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DDGS.NET" Version="1.0.1" />
     <PackageReference Include="EmbedResourceCSharp" Version="1.1.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -35,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\globe.svg" />
     <Resource Include="Resources\交大生活.svg" />
     <Resource Include="Resources\交我算.svg" />
     <Resource Include="Resources\校园管理.svg" />
