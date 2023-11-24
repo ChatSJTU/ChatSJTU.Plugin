@@ -63,7 +63,7 @@ namespace ChatSJTU.Plugin.Services
                             "description": "为模型提供获取搜索互联网以获取最新信息的能力",
                             "icon": "data:image/svg+xml;base64,{{Convert.ToBase64String(EmbedResHelper.GetGlobe())}}",
                             "functions": [
-                                {{HpcOverviewController.GetDef()}}
+                                {{WebSearchController.GetDef()}}
                             ]
                         }
                     ]
