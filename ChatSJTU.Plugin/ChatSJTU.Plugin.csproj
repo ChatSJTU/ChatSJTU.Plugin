@@ -28,15 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="TokenA.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="TokenB.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Resources\globe.svg" />
     <Resource Include="Resources\交大生活.svg" />
     <Resource Include="Resources\交我算.svg" />
